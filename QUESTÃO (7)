@@ -1,0 +1,60 @@
+programa {
+  funcao inicio() {
+
+    cadeia nome
+    real quantidade, precoUnitario, desconto, total, totalFinal
+
+    escreva("Digite o nome do produto: ")
+    leia(nome)
+    limpa()
+
+    escreva("Quantidade adquirida: ")
+    leia(quantidade)
+    limpa()
+
+    escreva("Digite o preço por unidade: ")
+    leia(precoUnitario)
+    limpa() 
+
+    total = quantidade * precoUnitario
+
+    se (quantidade <= 5){
+
+
+
+      desconto = precoUnitario * 0.2
+      totalFinal = total - desconto
+      escreva("Nome: ", nome)
+      escreva("\nQuantidade: ", quantidade)
+      escreva("\nPreço Unitário: R$ ", precoUnitario)
+      escreva("\nTotal sem desconto: R$ ", total)
+      escreva("\nTotal com desconto: R$ ", totalFinal)
+
+
+    }senao se(quantidade > 5 e quantidade <= 10){
+
+      desconto = precoUnitario * 0.3
+      totalFinal = total - desconto
+      escreva("Nome: ", nome)
+      escreva("\nQuantidade: ", quantidade)
+      escreva("\nPreço Unitário: R$ ", precoUnitario)
+      escreva("\nTotal sem desconto: R$ ", total)
+      escreva("\nTotal com desconto: R$ ", totalFinal)
+
+
+    }senao se (quantidade > 10){
+
+      desconto = precoUnitario * 0.5
+      totalFinal = total - desconto
+      escreva("Nome: ", nome)
+      escreva("\nQuantidade: ", quantidade)
+      escreva("\nPreço Unitário: R$ ", precoUnitario)
+      escreva("\nTotal sem desconto: R$ ", total)
+      escreva("\nTotal com desconto: R$ ", totalFinal)
+
+    }senao{
+
+      escreva("Escolha opção válida.")
+    }
+  }
+}

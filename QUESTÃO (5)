@@ -1,0 +1,54 @@
+programa {
+  funcao inicio() {
+
+    inteiro operacao, valorUno, valorDuo
+
+    escreva("Digite o valor (A): ")
+    leia(valorUno)
+    limpa()
+    
+    escreva("Digite o valor (B): ")
+    leia(valorDuo)
+    limpa()
+    
+    escreva("Escolha a operação: 1(+) 2(-) 3(*) 4(/):  ") 
+    leia(operacao)
+
+    limpa()
+
+    escolha(operacao){
+
+      caso 1: 
+
+      operacao = valorUno + valorDuo
+
+      escreva("Resultado: ", operacao)
+      pare
+
+      caso 2:
+
+      operacao = valorUno - valorDuo
+
+      escreva("Resultado: ", operacao)
+      pare
+
+      caso 3:
+
+      operacao = valorUno * valorDuo
+
+      escreva("Resultado: ", operacao)
+      pare
+
+      caso 4: 
+
+      operacao = valorUno / valorDuo
+      escreva("Resultado: ", operacao)
+      pare
+
+      caso contrario:
+
+      escreva("Digite uma opção válida!!")
+    }
+
+   }
+}

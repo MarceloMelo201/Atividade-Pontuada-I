@@ -1,0 +1,33 @@
+programa {
+  funcao inicio() {
+    
+    real valorTotal, rendaMensal, prestacao
+
+    escreva("Digite a renda mensal R$: ")
+    leia(rendaMensal)
+    limpa()
+
+    escreva("Digite o valor total do empréstimo R$: ")
+    leia(valorTotal)
+    limpa()
+
+    escreva("Digite o número de prestações R$: ")
+    leia(prestacao)
+    limpa()
+
+    se (valorTotal <= 10 * rendaMensal e prestacao <= 0.3 * rendaMensal){
+
+      escreva("Valor Total: R$ ", valorTotal)
+      escreva("\nRenda Mensal: R$ ", rendaMensal)
+      escreva("\nPrestações: R$ ", prestacao,"\tAo mês ")
+      escreva("\nEmpréstimo Aprovado!")
+    }senao{
+
+      escreva("Valor Total: R$ ", valorTotal)
+      escreva("\nRenda Mensal: R$ ", rendaMensal)
+      escreva("\nPrestações: R$ ", prestacao,"\tAo mês")
+      escreva("\nEmpréstimo Reprovado!")
+    }
+
+  }
+}

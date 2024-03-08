@@ -1,0 +1,57 @@
+programa {
+  funcao inicio() {
+    
+    cadeia nome, sexo
+    inteiro tempoCasado, estadoCivil
+
+    escreva("Digite o seu nome: ")
+    leia(nome)
+    limpa()
+
+    escreva("Digite o seu sexo(M ou F): ")
+    leia(sexo)
+    limpa()
+
+    escreva("Digite seu estado civil: Casado(1) - Solteiro(2) - Viúvo(3)")
+    leia(estadoCivil)
+    limpa()
+
+    escolha(estadoCivil){
+
+     caso 1: 
+
+     escreva("Digite o tempo de casado: ")
+     leia(tempoCasado)
+     limpa()
+
+     escreva("Nome: ", nome)
+     escreva("\nSexo: ", sexo)
+     escreva("\nEstado civil: Casado")
+     escreva("\nTempo de casado: ", tempoCasado, " anos")
+     pare 
+
+     caso 2: 
+
+     escreva("Nome: ", nome)
+     escreva("\nSexo: ", sexo)
+     escreva("\nEstado civil: Solteiro")
+
+     pare
+
+     caso 3:
+
+     escreva("Nome: ", nome)
+     escreva("\nSexo: ", sexo)
+     escreva("\nEstado civil: Viúvo")
+
+     pare
+
+     caso contrario: 
+
+     escreva("Digite uma opção válida.")
+    }
+
+
+    }
+  }
+}

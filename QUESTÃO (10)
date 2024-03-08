@@ -1,0 +1,63 @@
+programa {
+  funcao inicio() {
+    
+  inteiro litros, valor, desconto, valorTotal
+  cadeia tipoCombustivel
+
+  escreva("Digite o número de litros: ")
+  leia(litros)
+  limpa()
+
+  escreva("Digite o tipo de Combustível: (A) - Álcool  (G) - Gasolina:  ")
+  leia(tipoCombustivel)
+  limpa()
+
+  escolha(tipoCombustivel){
+
+    caso "A": 
+    se(litros <= 25){
+      valor = litros * 3.79
+      desconto = valor * 0.2
+      valorTotal = valor - desconto
+      escreva("Valor R$: ", valor)
+      escreva("\nDesconto R$: ", desconto)
+      escreva("\nValor Total R$: ", valorTotal)
+    }senao se(litros > 25){
+
+       valor = litros * 3.79
+      desconto = valor * 0.4
+      valorTotal = valor - desconto
+      escreva("Valor R$: ", valor)
+      escreva("\nDesconto R$: ", desconto)
+      escreva("\nValor Total R$: ", valorTotal)
+    }
+     pare 
+
+     caso "G": 
+     se(litros <= 25){
+
+       valor = litros * 6.59
+      desconto = valor * 0.3
+      valorTotal = valor - desconto
+      escreva("Valor R$: ", valor)
+      escreva("\nDesconto R$: ", desconto)
+      escreva("\nValor Total R$: ", valorTotal)
+     }senao se( litros > 25){
+
+       valor = litros * 6.59
+      desconto = valor * 0.5
+      valorTotal = valor - desconto
+      escreva("Valor R$: ", valor)
+      escreva("\nDesconto R$: ", desconto)
+      escreva("\nValor Total R$: ", valorTotal)
+      }
+
+    pare
+
+    caso contrario:
+    escreva("Digite uma opção válida.")
+
+   }
+
+  }
+}

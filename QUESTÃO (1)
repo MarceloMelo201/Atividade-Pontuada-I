@@ -1,0 +1,33 @@
+programa {
+  funcao inicio() {
+
+    real numeroUno, numeroDuo, numeroTri, soma
+
+    escreva("Digite o primeiro valor (A): ")
+    leia(numeroUno)
+    limpa()
+    
+    escreva("Digite o segundo valor (B): ")
+    leia(numeroDuo)
+    limpa()
+
+    escreva("Digite o terceiro valor (C): ")
+    leia(numeroTri)
+    limpa()
+
+    soma = numeroUno + numeroDuo
+
+    se(soma > numeroTri){
+
+      escreva("Valor da soma (A+B): ", soma) 
+      escreva("\nValor de C: ", numeroTri)
+      escreva("\nValor da soma é maior que o valor de C")
+    }senao{
+
+      escreva("Valor da soma (A+B): ", soma) 
+      escreva("\nValor de C: ", numeroTri)
+      escreva("\nO valor da soma é menor que o valor de C")
+
+    }
+  }
+}

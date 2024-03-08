@@ -17,7 +17,7 @@ programa {
     caso "A": 
     se(litros <= 25){
       valor = litros * 3.79
-      desconto = valor * 0.2
+      desconto = valor * 0.02
       valorTotal = valor - desconto
       escreva("Valor R$: ", valor)
       escreva("\nDesconto R$: ", desconto)
@@ -25,7 +25,7 @@ programa {
     }senao se(litros > 25){
 
        valor = litros * 3.79
-      desconto = valor * 0.4
+      desconto = valor * 0.04
       valorTotal = valor - desconto
       escreva("Valor R$: ", valor)
       escreva("\nDesconto R$: ", desconto)
@@ -37,7 +37,7 @@ programa {
      se(litros <= 25){
 
        valor = litros * 6.59
-      desconto = valor * 0.3
+      desconto = valor * 0.03
       valorTotal = valor - desconto
       escreva("Valor R$: ", valor)
       escreva("\nDesconto R$: ", desconto)
@@ -45,7 +45,7 @@ programa {
      }senao se( litros > 25){
 
        valor = litros * 6.59
-      desconto = valor * 0.5
+      desconto = valor * 0.05
       valorTotal = valor - desconto
       escreva("Valor R$: ", valor)
       escreva("\nDesconto R$: ", desconto)

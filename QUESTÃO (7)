@@ -22,7 +22,7 @@ programa {
 
 
 
-      desconto = precoUnitario * 0.2
+      desconto = precoUnitario * 0.02
       totalFinal = total - desconto
       escreva("Nome: ", nome)
       escreva("\nQuantidade: ", quantidade)
@@ -33,7 +33,7 @@ programa {
 
     }senao se(quantidade > 5 e quantidade <= 10){
 
-      desconto = precoUnitario * 0.3
+      desconto = precoUnitario * 0.03
       totalFinal = total - desconto
       escreva("Nome: ", nome)
       escreva("\nQuantidade: ", quantidade)
@@ -44,7 +44,7 @@ programa {
 
     }senao se (quantidade > 10){
 
-      desconto = precoUnitario * 0.5
+      desconto = precoUnitario * 0.05
       totalFinal = total - desconto
       escreva("Nome: ", nome)
       escreva("\nQuantidade: ", quantidade)

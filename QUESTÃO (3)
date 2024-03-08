@@ -1,0 +1,37 @@
+programa {
+  funcao inicio() {
+    
+    real valorUno, valorDuo, valorTri
+
+    escreva("Digite o valor (A): ")
+    leia(valorUno)
+    limpa()
+
+    escreva("Digite o valor (B): ")
+    leia(valorDuo)
+    limpa()
+
+    se (valorUno == valorDuo){
+
+      valorTri = valorUno + valorDuo 
+
+      escreva("==== VALORES ====")
+      escreva("\nValor (A): ", valorUno)
+      escreva("\nValor (B): ", valorDuo)
+      escreva("\nValor (Soma): ", valorTri)
+      
+    }senao se(valorUno != valorDuo){
+
+      valorTri = valorUno * valorDuo
+
+      escreva("==== VALORES ====")
+      escreva("\nValor (A): ", valorUno)
+      escreva("\nValor (B): ", valorDuo)
+      escreva("\nValor (Multiplicação): ", valorTri)
+
+    }senao{
+
+      escreva("Digite um valor válido: ")
+    }
+  }
+}

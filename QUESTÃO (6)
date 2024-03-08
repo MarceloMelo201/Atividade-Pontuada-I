@@ -1,0 +1,36 @@
+programa {
+  funcao inicio() {
+
+    real notaUno, notaDuo, media 
+
+    escreva("Digite a primeira nota: ")
+    leia(notaUno)
+    limpa()
+
+    escreva("Digite a segunda nota: ")
+    leia(notaDuo)
+    limpa()
+
+    media = (notaUno + notaDuo) / 2
+
+    se (media >= 6){ 
+
+      escreva("Média Final: ", media)
+      escreva("\nAluno Aprovado!")
+    }senao se (media < 6 e media >= 4 ){
+     
+      escreva("Média Final: ", media)
+      escreva("\nAluno em recuperação!!")
+
+    }senao se (media < 4){ 
+
+      escreva("Média Final: ", media)
+      escreva("\nAluno Reprovado!")
+    }senao{
+
+      escreva("Digite um valor válido.")
+    }
+
+
+  }
+}

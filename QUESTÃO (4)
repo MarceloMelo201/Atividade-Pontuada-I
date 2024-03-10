@@ -1,7 +1,7 @@
 programa {
   funcao inicio() {
 
-    real pesoMorangos, pesoMacas, precoMacas, precoMorangos, precoFinal, desconto
+     real pesoMorangos, pesoMacas, precoMacas, precoMorangos, precoFinal, desconto
 
     escreva("Digite a quantidade de Kg(Morangos): ")
     leia(pesoMorangos)
@@ -11,9 +11,29 @@ programa {
     leia(pesoMacas)
     limpa()
      
-     precoFinal = pesoMorangos * 2.5 + pesoMacas * 1.8
+   
+     se(pesoMorangos > 5){
+      
+     precoFinal = pesoMorangos * 2.2 + pesoMacas * 1.8
      desconto  = precoFinal * 0.9
-    se(pesoMacas > 8 ou pesoMorangos > 8 ou pesoMacas + pesoMorangos > 8 ou precoFinal > 25){
+
+     }senao se (pesoMacas > 5){
+
+     precoFinal = pesoMorangos * 2.5 + pesoMacas * 1.5
+     desconto  = precoFinal * 0.9
+
+     }senao se (pesoMorangos > 5 e pesoMacas > 5){
+
+      precoFinal = pesoMorangos * 2.5 + pesoMacas * 1.5
+      desconto  = precoFinal * 0.9
+
+     }senao{
+
+       precoFinal = pesoMorangos * 2.5 + pesoMacas * 1.8
+       desconto  = precoFinal * 0.9
+     }
+
+      se(pesoMacas > 8 ou pesoMorangos > 8 ou pesoMacas + pesoMorangos > 8 ou precoFinal > 25){
 
       escreva("=== Valores ===")
       escreva("\nPeso Maçãs: ", pesoMacas)
@@ -28,5 +48,6 @@ programa {
       escreva("\nPreço: R$ ", precoFinal)
 
     }
+    
   }
 }

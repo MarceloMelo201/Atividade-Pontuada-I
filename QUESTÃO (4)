@@ -24,7 +24,7 @@ programa {
 
      }senao se (pesoMorangos > 5 e pesoMacas > 5){
 
-      precoFinal = pesoMorangos * 2.5 + pesoMacas * 1.5
+      precoFinal = pesoMorangos * 2.2 + pesoMacas * 1.5
       desconto  = precoFinal * 0.9
 
      }senao{
